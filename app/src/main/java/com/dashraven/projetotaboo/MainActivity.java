@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
         private void seeRules() {
-            Intent rules = new Intent(this, Rules2.class);
+            Intent rules = new Intent(this, Rules.class);
             startActivity(rules);
         }
 }
