@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ProjetoTaboo</string>
+    <string name="newGameBtn">Novo Jogo</string>
+    <string name="rulesBtn">Regras</string>
+    <string name="logo">Taboo Game Logo</string>
+    <string name="title_activity_rules">Rules</string>
+
 </resources>
