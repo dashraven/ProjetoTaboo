@@ -9,4 +9,84 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.dashraven.projetotaboo.Rules">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Existem 2 equipas,que jogam de forma alternada."
+        android:id="@+id/rulesView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingEnd="10dp"
+        android:paddingTop="35dp"
+        android:paddingBottom="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="O jogo contem 4 cartas de diferentes cores:"
+        android:id="@+id/rulesView2"
+        android:layout_below="@+id/rulesView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/rulesView1"
+        android:layout_alignEnd="@+id/rulesView1"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Carta Vermelha - A equipa tem de adivinhar a palavra indicada sem mencionar nenhumas das 5 palavras proibidas,tendo 1 minuto para o efeito;"
+        android:id="@+id/rulesView3"
+        android:layout_below="@+id/rulesView2"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Carta Verde -  A equipa tem de adivinhar três palavras usando no máximo 15 palavras diferentes,tendo 2 minutos para o efeito;"
+        android:id="@+id/rulesView4"
+        android:layout_below="@+id/rulesView3"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Carta Azul - A equipa tem de recorrer à mímica para adivinhar as 3 expressões,tendo 1 minuto para o fazer;"
+        android:id="@+id/rulesView5"
+        android:layout_below="@+id/rulesView4"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:layout_alignRight="@+id/rulesView6"
+        android:layout_alignEnd="@+id/rulesView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Carta Amarela - A equipa tem desenhar de forma a adivinhar as as palavras ou acções, tendo 2 minutos para o efeito."
+        android:id="@+id/rulesView6"
+        android:layout_below="@+id/rulesView5"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cada resposta certa dá um ponto. Vence a equipa que chegar primeiro aos 50 pontos.x"
+        android:id="@+id/rulesView7"
+        android:layout_below="@+id/rulesView6"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:layout_alignRight="@+id/rulesView6"
+        android:layout_alignEnd="@+id/rulesView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
