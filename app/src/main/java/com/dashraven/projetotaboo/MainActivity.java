@@ -35,10 +35,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-        private void seeRules() {
-            Intent rules = new Intent(this, Rules.class);
-            startActivity(rules);
-        }
+    private void setupNewGame() {
+        Intent setupGame = new Intent(this, GameSetupActivity.class);
+        startActivity(setupGame);
+        finish();
+    }
+
+    private void seeRules() {
+        Intent rules = new Intent(this, Rules.class);
+        startActivity(rules);
+        finish();
+    }
 }
 
 
