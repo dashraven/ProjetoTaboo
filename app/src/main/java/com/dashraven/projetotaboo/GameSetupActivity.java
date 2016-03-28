@@ -46,7 +46,7 @@ public class GameSetupActivity extends AppCompatActivity {
                     equipa2 = new Equipa(nome_equipa2.getText().toString());
                     equipas.add(Equipa);
                 }
-                if (equipas.size != 2) {
+                if (equipas.size() != 2) {
                     Toast.makeText(GameSetupActivity.this, "Só é possivel jogar depois de configurar as duas equipas! Verifique novamente", Toast.LENGTH_LONG).show();
                 } else {
                     Intent playgame = new Intent(GameSetupActivity.this, PlayGame.class):
