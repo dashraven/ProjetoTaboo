@@ -3,6 +3,7 @@ package com.dashraven.projetotaboo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -46,7 +47,7 @@ public class GameSetupActivity extends AppCompatActivity {
                     equipa2 = new Equipa(nome_equipa2.getText().toString());
                     equipas.add(equipa1);
                 }
-                if (equipas.size() != 2) {
+                if (equipas.size() <2 ) {
                     Toast.makeText(GameSetupActivity.this, "Só é possivel jogar depois de configurar as duas equipas! Verifique novamente", Toast.LENGTH_LONG).show();
                 } else {
                     Intent playgame = new Intent(GameSetupActivity.this, PlayGame.class);

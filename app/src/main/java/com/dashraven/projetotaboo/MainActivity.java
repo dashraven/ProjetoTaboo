@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         newGameBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                setupNewGame();
             }
         });
 

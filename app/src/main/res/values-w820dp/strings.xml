@@ -6,4 +6,5 @@
     <string name="logo">Taboo Game Logo</string>
     <string name="title_activity_rules">Rules</string>
     <string name="redcard">red card</string>
+    <string name="homeButton">Menu</string>
 </resources>
