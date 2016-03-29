@@ -19,7 +19,7 @@ public class GameSetupActivity extends AppCompatActivity {
     public static Equipa equipa1;
     public static Equipa equipa2;
 
-    public static ArrayList<equipa> equipas = new ArrayList<>();
+    public static ArrayList equipas = new ArrayList<>();
 
 
     @Override
@@ -39,20 +39,19 @@ public class GameSetupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (equipa1 != null) {
-                equipa1 = new Equipa(nome_equipa1.getText().toString());
-                    equipas.add(Equipa);
+                    equipa1 = new Equipa(nome_equipa1.getText().toString());
+                    equipas.add(equipa1);
                 }
                 if (equipa2 != null) {
                     equipa2 = new Equipa(nome_equipa2.getText().toString());
-                    equipas.add(Equipa);
+                    equipas.add(equipa1);
                 }
                 if (equipas.size() != 2) {
                     Toast.makeText(GameSetupActivity.this, "Só é possivel jogar depois de configurar as duas equipas! Verifique novamente", Toast.LENGTH_LONG).show();
                 } else {
-                    Intent playgame = new Intent(GameSetupActivity.this, PlayGame.class):
+                    Intent playgame = new Intent(GameSetupActivity.this, PlayGame.class);
                     startActivity(playgame);
                     finish();
-
                 }
             }
         });
