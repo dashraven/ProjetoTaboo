@@ -19,7 +19,7 @@
             android:name=".Rules"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".GameSetupActivity" />
-        <activity android:name=".PlayGame"></activity>
+        <activity android:name=".PlayGame" />
     </application>
 
 </manifest>
