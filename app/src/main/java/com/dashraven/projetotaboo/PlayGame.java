@@ -15,12 +15,12 @@ import java.util.ArrayList;
 
 public class PlayGame extends AppCompatActivity {
 
-    public static ArrayList<UsedRedCards> UsedRedCards = new ArrayList<>();
-    public static ArrayList<UsedBlueCards> UsedBlueCards = new ArrayList<>();
-    public static ArrayList<UsedGreenCards> UsedGreenCards = new ArrayList<>();
-    public static ArrayList<UsedYellowCards> UsedYellowCards = new ArrayList<>();
-    public static ArrayList<LastCards> LastCards = new ArrayList<>();
-    public static Array PlayCards = new Array (1, 2, 3, 4);
+//    public static ArrayList<UsedRedCards> UsedRedCards = new ArrayList<>();
+//    public static ArrayList<UsedBlueCards> UsedBlueCards = new ArrayList<>();
+//    public static ArrayList<UsedGreenCards> UsedGreenCards = new ArrayList<>();
+//    public static ArrayList<UsedYellowCards> UsedYellowCards = new ArrayList<>();
+//    public static ArrayList<LastCards> LastCards = new ArrayList<>();
+//    public static Array PlayCards = new Array (1, 2, 3, 4);
 
     public int PlayCardId;
     public static int newCardColor;
@@ -35,34 +35,37 @@ public class PlayGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_game);
 
-        DataBaseHelper myDbHelper = new DataBaseHelper();
-        myDbHelper = new DataBaseHelper(this);
-        try {
-            myDbHelper.createDataBase();
-        } catch (IOException ioe) {
-            throw new Error("Unable to create database");
-        }
-        try {
-            myDbHelper.openDataBase();
-        }catch(SQLException sqle){
-            throw sqle;
-        }
 
+        //arranque da BD
+//        DataBaseHelper myDbHelper = new DataBaseHelper();
+//        myDbHelper = new DataBaseHelper(this);
+//        try {
+//            myDbHelper.createDataBase();
+//        } catch (IOException ioe) {
+//            throw new Error("Unable to create database");
+//        }
+//        try {
+//            myDbHelper.openDataBase();
+//        }catch(SQLException sqle){
+//            throw sqle;
+//        }
 
-    int PlayCardId = ThreadLocalRandom.current().nextInt(1, 50 + 1);
-        int newCardColor = (int) Math.floor(Math.random() * PlayCards.getLength()-1);
-
-
-
-        if (newCardColor=1) {
-        if (UsedRedCards != null && RedCard != UsedRedCards.size()-1) {
-            UsedRedCards.add(RedCard);
-            };
-            Intent redcard = new Intent (PlayGame.this, RedCards.class);
-            redcard.putExtra("PlaycardId",PlayCardId);
-            startActivity(redcard);
-            finish();
-        };
+        //Gerar cor da carta de forma aletória
+//        int newCardColor = (int) Math.floor(Math.random() * PlayCards.getLength()-1);
+        //Gerar carta aleatória
+//    int PlayCardId = ThreadLocalRandom.current().nextInt(1, 50 + 1);
+//
+//
+//        Verificar se carta já saiu, e inicia activity que faz querie da cor da carta
+//        if (newCardColor=1) {
+//        if (UsedRedCards != null && RedCard != UsedRedCards.size()-1) {
+//            UsedRedCards.add(RedCard);
+//            };
+//            Intent redcard = new Intent (PlayGame.this, RedCards.class);
+//            redcard.putExtra("PlaycardId",PlayCardId);
+//            startActivity(redcard);
+//            finish();
+//        };
 
 
 

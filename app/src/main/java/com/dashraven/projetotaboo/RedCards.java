@@ -61,8 +61,8 @@ public class RedCards extends CursorAdapter {
 
     int PlayCardId = ThreadLocalRandom.current().nextInt(1, 50 + 1);
     // TodoDatabaseHandler is a SQLiteOpenHelper class connecting to SQLite
-    DataBaseHelper query = new DataBaseHelper(this);
-    SQLiteDatabase db = query.getReadableDatabase();
+    //DataBaseHelper query = new DataBaseHelper(this);
+    //SQLiteDatabase db = query.getReadableDatabase();
     //
-    Cursor cursor = db.rawQuery("SELECT  * FROM redcards WHERE id=" + PlayCardId , null);
+    //Cursor cursor = db.rawQuery("SELECT  * FROM redcards WHERE id=" + PlayCardId , null);
 }
